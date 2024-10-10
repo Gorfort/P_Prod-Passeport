@@ -1,79 +1,98 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Form Container */
-  form {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
-    text-align: center; /* Center the content inside the form */
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
   }
   
   h2 {
     color: #333;
+    text-align: center;
     margin-bottom: 20px;
-    text-align: center; /* Ensure the heading is centered */
   }
   
-  /* Input Styles */
-  label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 8px;
-    color: #333;
-    text-align: left; /* Keep the labels aligned to the left */
+  /* Form and Section Containers */
+  div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  input,
+  button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
   
   input[type="text"],
   input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
     font-size: 16px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
   }
   
-  /* Button Styles */
   button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
+    background-color: #28a745;
     color: #fff;
-    border: none;
-    border-radius: 6px;
     font-size: 16px;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
   }
   
-  /* Mobile Responsive */
+  /* Error Message */
+  #errorMessage {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Profile and Search Sections */
+  #userProfile,
+  #searchResults {
+    text-align: left;
+  }
+  
+  #userProfile h3,
+  #searchResults h3 {
+    text-align: center;
+    color: #444;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
   @media screen and (max-width: 600px) {
-    form {
-      padding: 20px;
+    div {
+      margin: 10px;
+      padding: 15px;
     }
   
-    input,
-    button {
-      padding: 10px;
+    button,
+    input {
+      padding: 8px;
     }
   }
   
