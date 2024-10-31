@@ -2,10 +2,10 @@ import mysql from "mysql2";
 import fs from 'fs';
 
 const connection = mysql.createConnection({
-    host: '172.20.0.2',
+    host: '172.24.0.2',
     user: 'root',
     password: 'root',
-    database: 'db_products',
+    database: 'db_passport',
     port: 3306,
 });
 

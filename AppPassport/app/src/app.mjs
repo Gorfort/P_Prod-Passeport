@@ -9,6 +9,7 @@ import { fileURLToPath } from "url";
 import path from "path";
 import cors from "cors";
 
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -43,10 +44,12 @@ connection.connect((error) => {
       res.sendFile(path.join(__dirname, "formulaire_login.html"));
     });
 
-    app.get("/page-d'acceuil.html", (req, res) => {
-      res.sendFile(path.join(__dirname, "page-d'acceuil.html")); // Page d'accueil
+    app.get("/Front/html/index.html", (req, res) => {
+      res.sendFile(path.join(__dirname, "./Front/html/index.html"));
     });
-
+    
+    app.use('/Front', express.static('Front'));
+    
     https.createServer(httpsOptions, app).listen(port, () => {
       console.log(`Server is listening on port ${port}`);
     });
