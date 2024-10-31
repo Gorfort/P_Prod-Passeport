@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Form</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h2>Passeport ETML</h2>
+    </header>
+
+    <div class="form-container">
+        <h1>Passport Application Form</h1>
+        <form id="passportForm">
+            <label for="firstName">Prénom</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Nom</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="profPrinc">Professeur Principal</label>
+            <input type="text" id="profPrinc" name="profPrinc" required>
+
+            <label for="nationality">Classe</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <label for="passportNumber">Orientation pro</label>
+            <select id="passportNumber" name="passportNumber" required>
+                <option value="">Select Orientation</option>
+                <option value="DEV">DEV</option>
+                <option value="Infra">Infra</option>
+            </select>
+
+            <label for="dob">Date</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="motivation">Motivation élève</label>
+            <textarea id="motivation" name="motivation" rows="4" required style="resize: none;"></textarea>
+        </form>
+    </div>
+
+
+    <div class="form-container">
+        <h3>Evaluation 1</h3>
+        <label for="prof1">Prof</label>
+        <input type="text" id="prof1" name="prof1" required>
+    
+        <label for="module1">Module</label>
+        <input type="text" id="module1" name="module1" required>
+    
+        <label for="comment1">Commentaire</label>
+        <textarea id="comment1" name="comment1" rows="2" style="resize: none;" required></textarea>
+    
+        <label>Orientation</label>
+        <div class="radio-group">
+            <input type="radio" id="dev1" name="orientation1" value="DEV" required>
+            <label for="dev1">DEV</label>
+            <input type="radio" id="infra1" name="orientation1" value="Infra" required>
+            <label for="infra1">Infra</label>
+        </div>
+    </div>
+    
+
+    <div class="form-container">
+        <h3>Professeur 2</h3>
+        <label for="prof2">Prof</label>
+        <input type="text" id="prof2" name="prof2" required>
+
+        <label for="module2">Module</label>
+        <input type="text" id="module2" name="module2" required>
+
+        <label for="comment2">Commentaire</label>
+        <textarea id="comment2" name="comment2" rows="2" style="resize: none;" required></textarea>
+
+        <label>Orientation</label>
+        <div class="radio-group">
+            <input type="radio" id="dev2" name="orientation2" value="DEV" required>
+            <label for="dev2">DEV</label>
+            <input type="radio" id="infra2" name="orientation2" value="Infra" required>
+            <label for="infra2">Infra</label>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h3>Professeur 3</h3>
+        <label for="prof3">Prof</label>
+        <input type="text" id="prof3" name="prof3" required>
+
+        <label for="module3">Module</label>
+        <input type="text" id="module3" name="module3" required>
+
+        <label for="comment3">Commentaire</label>
+        <textarea id="comment3" name="comment3" rows="2" style="resize: none;" required></textarea>
+
+        <label>Orientation</label>
+        <div class="radio-group">
+            <input type="radio" id="dev3" name="orientation3" value="DEV" required>
+            <label for="dev3">DEV</label>
+            <input type="radio" id="infra3" name="orientation3" value="Infra" required>
+            <label for="infra3">Infra</label>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h3>Professeur 4</h3>
+        <label for="prof4">Prof</label>
+        <input type="text" id="prof4" name="prof4" required>
+
+        <label for="module4">Module</label>
+        <input type="text" id="module4" name="module4" required>
+
+        <label for="comment4">Commentaire</label>
+        <textarea id="comment4" name="comment4" rows="2" style="resize: none;" required></textarea>
+
+        <label>Orientation</label>
+        <div class="radio-group">
+            <input type="radio" id="dev4" name="orientation4" value="DEV" required>
+            <label for="dev4">DEV</label>
+            <input type="radio" id="infra4" name="orientation4" value="Infra" required>
+            <label for="infra4">Infra</label>
+        </div>
+    </div>
+
+    <!-- Print button at the bottom -->
+    <button type="button" onclick="printForm()">Print</button>
+
+    <footer>
+        Thibaud Racine, Yohan Cardis - ETML 2024
+    </footer>
+
+    <script>
+        function printForm() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
